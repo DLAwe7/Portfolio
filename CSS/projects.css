@@ -1,0 +1,63 @@
+.projects-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: .1rem .1rem 5rem .1rem var(--blue-color);
+    background: rgba(7, 6, 6, 0.238);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;   
+    animation: to_left  ease forwards 1s;
+    
+}
+
+
+
+/* #region   ------------------------------------------             MEDIA QUERIES         ---------------------------------------------------             */
+
+
+@media (max-width: 900px){
+
+    .projects-container{
+        width: 99%;
+    }
+
+    .project-redirection{
+        flex-direction: column;
+    }
+
+    .project-wrapper{
+        width: 100%;
+    }
+
+    .preview-wrapper{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        
+    }
+
+    .project-title{
+        text-align: center;
+    }
+
+    
+    .tools-container{
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .tools{
+        margin-bottom: 10px;
+    }
+
+}
+
+
+
+
+
+
+/* #endregion */

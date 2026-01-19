@@ -1,0 +1,128 @@
+.contact-main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact-text-wrapper{
+    box-shadow: .1rem .1rem 5rem .1rem var(--blue-color);
+    background: rgba(7, 6, 6, 0.238);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;   
+    animation: to_left  ease forwards 1s;
+    width: 60%;
+
+}
+
+.contact-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  
+    
+}
+
+
+
+.contact-h1-title{
+    text-align: center;
+    padding: 20px;
+    font-size: 3rem;
+    border-bottom: .1px solid white;
+}
+
+.contact-text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+.contact-li-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-li-wrapper i{
+    width: 20px;
+}
+
+.contact-li{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-li a{
+    color: white;
+    transition: .2s;
+}
+
+.contact-li a:hover{
+    color: hsl(319, 77%, 58%);
+
+}
+
+.contact-image-container{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+
+}
+
+.contact-img{
+    width: 60%;
+    height: auto;
+    border: .5rem solid var(--text-color);
+    border-radius: 50%;
+    box-shadow: 1rem 1rem 5rem var(--blue-color);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transform: scale(0);
+    animation: scale_img 1s ease forwards .5s;
+
+}
+
+.contact-flex-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 1030px){
+
+    .contact-main{
+        width: 99%;
+    }
+
+    .contact-wrapper{
+        flex-direction: column;
+        width: 99%;
+        gap: 0px;
+    }
+
+    .contact-text-wrapper{
+        width: 100%;
+    }
+
+    .contact-image-container{
+        width: 100%;
+        margin: 50px;
+    }
+   
+}
+
+@media (max-width: 600px){
+
+    .contact-li-wrapper{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+
+
+}

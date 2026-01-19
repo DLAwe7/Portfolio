@@ -1,0 +1,280 @@
+.sections{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+    gap: 50px;
+
+}
+
+.first{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    z-index: 3;
+    opacity: 0;
+    animation: to_right 1s ease forwards .5s;
+}
+
+.second{
+    width: 100%;
+    box-shadow: .1rem .1rem 5rem .1rem var(--blue-color);
+    background: rgba(7, 6, 6, 0.238);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;   
+    animation: to_left  ease forwards 1s;
+    margin-bottom: 30px;
+    
+}
+
+.personal{
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.text-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--text-color);
+    word-break: break-word;
+}
+
+.icon-box{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.icon-box i{
+    color: var(--blue-color);
+    padding:  .7rem;
+    font-size: 2.6rem;
+    cursor: pointer;
+    border: .2rem solid var(--blue-color);
+    border-radius: 50%;
+    transition: .2s;
+}
+
+.icon-box i:hover{
+    color: var(--text-color);
+    background-color: var(--blue-color);
+    box-shadow: 0 0 1.5rem var(--blue-color);
+}
+
+.text-box *{
+    opacity: 0;
+}
+
+.text-box h1,
+.text-box strong{
+    font-size: 4.6rem;
+    font-weight: 300;
+    animation: to_left 1s ease forwards;
+}
+
+.contact{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: .2s;
+    animation: to_left 1s ease forwards .3s;
+
+}
+
+.download-button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-color);
+    padding: 5px 15px;
+    border: .2rem solid var(--blue-color);
+    background-color: var(--blue-color);
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 20px; 
+}
+
+.download-button i{
+    font-size: 15px;
+}
+
+.download-button:hover{
+    box-shadow: 0 0 1.5rem var(--blue-color);
+}
+
+.about-redirect{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2rem;
+    padding: 5px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .2s;
+    box-shadow: .1rem .1rem 2rem .1rem rgb(209, 244, 255);
+    background: rgba(7, 6, 6, 0.238);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: .1rem solid hsl(0, 1%, 19%);
+    color: var(--text-color);
+}
+
+.about-redirect:hover{
+    background-color: hsla(0, 2%, 20%, 0.602);
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    max-width: 20%;
+}
+
+.personal-image{
+    width: 100%;
+    height: auto;
+    border: .5rem solid var(--text-color);
+    border-radius: 50%;
+    box-shadow: 1rem 1rem 5rem var(--blue-color);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transform: scale(0);
+    animation: scale_img 1s ease forwards .5s;
+}
+
+.more-projects{
+    padding: 0px 20px 20px 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 2rem;
+}
+
+.more-projects-anchor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.more-projects-anchor i{
+    font-size: 15px;
+}
+
+.more-projects-anchor:hover{
+    background-color: hsla(0, 2%, 20%, 0.602);
+}
+
+
+@media (max-width: 900px){
+
+    .sections{
+        width: 99%;
+    }
+
+    .project-redirection{
+        flex-direction: column;
+    }
+
+    .project-wrapper{
+        width: 100%;
+    }
+
+    .preview-wrapper{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        
+    }
+
+    .project-title{
+        text-align: center;
+    }
+
+    
+    .tools-container{
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .tools{
+        margin-bottom: 10px;
+    }
+
+    .personal-image{
+        display: none;
+    }
+
+    .first{
+        justify-content: center;
+    }
+
+
+}
+
+@media (max-width: 630px){
+
+    .text-box h1,
+    .text-box strong{
+        font-size: 3rem;
+        
+    }
+
+    .first *{
+        font-size: 1.7rem;
+    }
+
+    .first{
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+
+
+
+}
+
+@media (max-width: 460px){
+
+    .contact{
+        flex-direction: column;
+    }
+
+    .icon-box{
+        display: none;
+    }
+    
+    .first{
+        gap: 0px;
+    }
+
+    .text-box{
+        padding: 5px 15px;
+    }
+
+    .project-title{
+        font-size: 2.6rem;
+    }
+}
+
+
+
