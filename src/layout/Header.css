@@ -1,0 +1,50 @@
+.portfolio-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    color: var(--text-color);
+    background: none;
+    font-size: 2.4rem;
+    width: 100%;
+    padding: 50px;
+}
+
+.portfolio-logo {
+    width: clamp(5rem, 5vw, 10rem);
+    height: auto;
+}
+
+
+header img {
+    width: 10rem;
+    border-radius: 50%;
+    animation: to_bottom 1s ease forwards;
+}
+
+.header-anchor {
+    font-size: clamp(1.8rem, 3.5vw, 2.2rem);
+    border: none;
+    background: none;
+    text-decoration: none;
+    color: var(--text-color);
+    cursor: pointer;
+    animation: to_bottom 1s ease forwards;
+}
+
+.header-anchor:hover,
+.active {
+    color: var(--blue-color)
+}
+
+
+
+@media (max-width: 615px) {
+
+    .portfolio-header {
+
+        padding: 1rem;
+    }
+
+}

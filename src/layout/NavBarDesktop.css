@@ -1,0 +1,15 @@
+.nav-bar-ul {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+
+}
+
+.bottom-icons svg {
+    color: white;
+    transition: .2s;
+}
+
+.bottom-icons i:hover {
+    color: var(--blue-color);
+}

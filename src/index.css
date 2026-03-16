@@ -1,0 +1,256 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("/assets/black-wallpaper-image.jpg");
+  background-size: cover;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --text-color: hsl(0, 0%, 90%);
+  --blue-color: #1e99d6;
+  --hover-color: hsl(200, 100%, 65%);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+
+.second-title {
+  text-align: center;
+  padding: 2rem;
+  font-size: clamp(2.4rem, 3.5vw, 4rem);
+  border-bottom: .1px solid white;
+}
+
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.project-redirection {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  gap: 2rem;
+  padding: 2rem;
+  color: var(--text-color);
+
+}
+
+.project-redirection:hover .project-title {
+  color: hsl(319, 77%, 58%);
+}
+
+
+.project-redirection:hover {
+  background: hsla(0, 1%, 45%, 0.18);
+  transition: .2s;
+}
+
+.project-redirection:hover .projects-preview {
+  transform: scale(1.025);
+}
+
+.project-redirection:hover .project-title {
+  color: hsl(319, 77%, 58%);
+}
+
+.project-title {
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  transition: .7s
+}
+
+.tools {
+  margin-bottom: 3rem;
+}
+
+.tools,
+.tools-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.project-description {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.tool {
+  display: flex;
+  gap: 0.5rem;
+  font-size: clamp(1.6rem, 3.5vw, 2rem);
+}
+
+.tool svg {
+  width: 2rem;
+}
+
+.preview-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+
+}
+
+.projects-preview {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 2rem;
+  transition: transform .2s ease;
+}
+
+.project-wrapper {
+  width: 50%;
+}
+
+.click-more {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  gap: 1rem;
+
+}
+
+
+
+:focus-visible {
+  outline: 1px solid gray;
+}
+
+
+
+
+
+
+
+
+
+
+/* #endregion */
+.pink {
+  color: hsl(319, 63%, 62%);
+}
+
+.yellow {
+  color: hsl(48, 88%, 60%);
+}
+
+.orange {
+  color: hsl(31, 78%, 58%);
+}
+
+.red {
+  color: hsl(0, 78%, 62%);
+}
+
+.green {
+  color: hsl(152, 72%, 52%);
+}
+
+.blue {
+  color: hsl(195, 78%, 60%);
+}
+
+
+/* #region   ------------------------------------------             ANIMATIONS         ---------------------------------------------------             */
+
+
+@keyframes to_bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-8rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes to_left {
+  0% {
+    opacity: 0;
+    transform: translateX(8rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes to_right {
+  0% {
+    opacity: 0;
+    transform: translateX(-4rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scale_img {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/* #endregion */
+
+/* #region   ------------------------------------------             MEDIA QUERIES         ---------------------------------------------------             */
+
+
+.overflow-hidden {
+  overflow-y: hidden;
+}
+
+.hidden {
+  display: none;
+
+}
+
+
+/* #endregion */

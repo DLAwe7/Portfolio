@@ -1,78 +1,76 @@
-.contact-main{
+.contact-main {
     width: 90%;
     margin: 0 auto;
 }
 
-.contact-text-wrapper{
+.contact-text-wrapper {
     box-shadow: .1rem .1rem 5rem .1rem var(--blue-color);
     background: rgba(7, 6, 6, 0.238);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;   
-    animation: to_left  ease forwards 1s;
+    border-radius: 20px;
+    animation: to_left ease forwards 1s;
     width: 60%;
 
 }
 
-.contact-wrapper{
+.contact-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
-  
-    
+    gap: 4rem;
+
+
 }
 
-
-
-.contact-h1-title{
+.contact-h1-title {
     text-align: center;
-    padding: 20px;
-    font-size: 3rem;
+    padding: 2rem;
+    font-size: clamp(2rem, 3.5vw, 3rem);
     border-bottom: .1px solid white;
 }
 
-.contact-text-container{
+.contact-text-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    font-size: 2rem;
-    padding: 20px;
+    gap: 1rem;
+    font-size: 1.7rem;
+    padding: 2rem;
 }
 
-.contact-li-wrapper{
+.contact-li-wrapper {
     display: flex;
     justify-content: space-between;
 }
 
-.contact-li-wrapper i{
-    width: 20px;
+.contact-li-wrapper svg {
+    width: 2rem;
 }
 
-.contact-li{
+.contact-li {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
 }
 
-.contact-li a{
+.contact-li a {
     color: white;
     transition: .2s;
 }
 
-.contact-li a:hover{
+.contact-li a:hover {
     color: hsl(319, 77%, 58%);
 
 }
 
-.contact-image-container{
+.contact-image-container {
     display: flex;
     justify-content: center;
     width: 40%;
 
 }
 
-.contact-img{
+.contact-img {
     width: 60%;
     height: auto;
     border: .5rem solid var(--text-color);
@@ -86,43 +84,52 @@
 
 }
 
-.contact-flex-wrapper{
+.contact-flex-wrapper {
     display: flex;
     align-items: center;
-    gap: 10px;
+    word-break: break-all;
+    gap: 1rem;
 }
 
-@media (max-width: 1030px){
+@media (max-width: 1030px) {
 
-    .contact-main{
+    .contact-main {
         width: 99%;
     }
 
-    .contact-wrapper{
+    .contact-wrapper {
         flex-direction: column;
         width: 99%;
         gap: 0px;
     }
 
-    .contact-text-wrapper{
+    .contact-text-wrapper {
         width: 100%;
     }
 
-    .contact-image-container{
+    .contact-image-container {
         width: 100%;
-        margin: 50px;
+        margin: 5rem;
     }
-   
+
 }
 
-@media (max-width: 600px){
 
-    .contact-li-wrapper{
+
+@media (max-width: 600px) {
+
+    .contact-li-wrapper {
         flex-direction: column;
-        gap: 10px;
+        gap: 1rem;
     }
 
 
 
 
+}
+
+@media (max-width: 335px) {
+    .contact-flex-wrapper {
+        align-items: flex-start;
+    }
 }

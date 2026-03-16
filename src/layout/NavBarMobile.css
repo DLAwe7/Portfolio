@@ -1,0 +1,98 @@
+.aside-nav-bar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30rem;
+    height: 100vh;
+    transition: transform .5s ease;
+    transform: translateX(100%);
+    z-index: 10;
+    background-color: rgba(6, 6, 6, 0.931);
+    will-change: transform;
+}
+
+.aside-nav-bar-wrapper.open {
+    transform: translateX(0);
+}
+
+.aside-nav-bar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.closing-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem 2rem 0rem 2.5rem;
+}
+
+.closing-button,
+.opening-button {
+    padding: 1rem;
+    font-size: 2rem;
+    border: none;
+    background: none;
+    text-decoration: none;
+    color: var(--text-color);
+    cursor: pointer;
+    animation: to_bottom 1s ease forwards;
+}
+
+.closing-button:hover {
+    background-color: rgba(54, 54, 54, 0.715);
+
+}
+
+.closing-button:focus:not(:focus-visible),
+.opening-button:focus:not(:focus-visible) {
+    outline: none;
+}
+
+
+.github-header:focus {
+    color: inherit;
+}
+
+.header-anchor.github-header:hover {
+    color: orange;
+}
+
+.closing-button svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+
+.bottom-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: auto;
+    padding: 2rem;
+    font-size: 2rem;
+    gap: 1rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+.header-anchor {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+    margin: 0px;
+}
+
+.closing-button,
+.github-header {
+    display: flex;
+}

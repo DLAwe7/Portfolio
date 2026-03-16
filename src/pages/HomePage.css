@@ -1,48 +1,48 @@
-.sections{
+.sections {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     width: 90%;
-    gap: 50px;
+    gap: 5rem;
 
 }
 
-.first{
+.first {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 3rem;
     z-index: 3;
     opacity: 0;
     animation: to_right 1s ease forwards .5s;
 }
 
-.second{
+.second {
     width: 100%;
     box-shadow: .1rem .1rem 5rem .1rem var(--blue-color);
     background: rgba(7, 6, 6, 0.238);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;   
-    animation: to_left  ease forwards 1s;
-    margin-bottom: 30px;
-    
+    border-radius: 20px;
+    animation: to_left ease forwards 1s;
+    margin-bottom: 3rem;
+
 }
 
-.personal{
+.personal {
     display: flex;
     flex-direction: column;
 }
 
-.personal-description{
+.personal-description {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 3rem;
 }
 
-.text-box{
+.text-box {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -50,82 +50,84 @@
     word-break: break-word;
 }
 
-.icon-box{
+.icon-box {
     display: flex;
-    gap: 10px;
+    gap: 1rem;
     flex-direction: column;
 }
 
-.icon-box i{
+.icon-box svg {
     color: var(--blue-color);
-    padding:  .7rem;
+    padding: .7rem;
     font-size: 2.6rem;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
     border: .2rem solid var(--blue-color);
     border-radius: 50%;
     transition: .2s;
 }
 
-.icon-box i:hover{
+.icon-box svg:hover {
     color: var(--text-color);
     background-color: var(--blue-color);
-    box-shadow: 0 0 1.5rem var(--blue-color);
+    box-shadow: 0 0 .5rem var(--blue-color);
 }
 
-.text-box *{
+.text-box * {
     opacity: 0;
 }
 
 .text-box h1,
-.text-box strong{
-    font-size: 4.6rem;
+.text-box strong {
+    font-size: clamp(3rem, 3.5vw, 4rem);
     font-weight: 300;
     animation: to_left 1s ease forwards;
 }
 
-.contact{
-    margin-top: 20px;
+.contact {
+    margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 2rem;
     transition: .2s;
     animation: to_left 1s ease forwards .3s;
 
 }
 
-.download-button{
+.download-button {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
     color: var(--text-color);
-    padding: 5px 15px;
+    padding: 0.5rem 1.5rem;
     border: .2rem solid var(--blue-color);
     background-color: var(--blue-color);
-    font-size: 2rem;
+    font-size: clamp(1.7rem, 3.5vw, 2rem);
     cursor: pointer;
-    border-radius: 20px; 
+    border-radius: 20px;
 }
 
-.download-button i{
-    font-size: 15px;
+.download-button svg {
+    font-size: 1.5rem;
 }
 
-.download-button:hover{
+.download-button:hover {
     box-shadow: 0 0 1.5rem var(--blue-color);
 }
 
-.about-redirect{
+.about-redirect {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 2rem;
-    padding: 5px 15px;
+    gap: 1rem;
+    font-size: clamp(1.7rem, 3.5vw, 2rem);
+    padding: 0.5rem 1.5rem;
     text-decoration: none;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 2rem;
     transition: .2s;
-    box-shadow: .1rem .1rem 2rem .1rem rgb(209, 244, 255);
+    box-shadow: .1rem .1rem 1rem .1rem rgb(209, 244, 255);
     background: rgba(7, 6, 6, 0.238);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -133,17 +135,17 @@
     color: var(--text-color);
 }
 
-.about-redirect:hover{
+.about-redirect:hover {
     background-color: hsla(0, 2%, 20%, 0.602);
 }
 
-.image-container{
+.image-container {
     display: flex;
     justify-content: center;
     max-width: 20%;
 }
 
-.personal-image{
+.personal-image {
     width: 100%;
     height: auto;
     border: .5rem solid var(--text-color);
@@ -156,96 +158,92 @@
     animation: scale_img 1s ease forwards .5s;
 }
 
-.more-projects{
-    padding: 0px 20px 20px 20px;
+.more-projects {
+    padding: 0rem 2rem 2rem 2rem;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    font-size: 2rem;
+    font-size: clamp(1.8rem, 3.5vw, 2rem);
 }
 
-.more-projects-anchor{
+.more-projects-anchor {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 1rem;
     color: white;
-    padding: 5px 15px;
-    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
     transition: .2s;
 }
 
-.more-projects-anchor i{
-    font-size: 15px;
+.more-projects-anchor svg {
+    font-size: 1.5rem;
 }
 
-.more-projects-anchor:hover{
+.more-projects-anchor:hover {
     background-color: hsla(0, 2%, 20%, 0.602);
 }
 
 
-@media (max-width: 900px){
+@media (max-width: 900px) {
 
-    .sections{
+    .sections {
         width: 99%;
     }
 
-    .project-redirection{
+    .project-redirection {
         flex-direction: column;
     }
 
-    .project-wrapper{
+    .project-wrapper {
         width: 100%;
     }
 
-    .preview-wrapper{
+    .preview-wrapper {
         display: flex;
         justify-content: center;
         width: 100%;
-        
+
     }
 
-    .project-title{
+    .project-title {
         text-align: center;
     }
 
-    
-    .tools-container{
+
+    .tools-container {
         flex-direction: row;
-        gap: 10px;
+        gap: 1rem;
     }
 
-    .tools{
-        margin-bottom: 10px;
+    .tools {
+        margin-bottom: 1rem;
     }
 
-    .personal-image{
+    .personal-image {
         display: none;
     }
 
-    .first{
+    .first {
         justify-content: center;
     }
 
 
 }
 
-@media (max-width: 630px){
+@media (max-width: 630px) {
 
-    .text-box h1,
-    .text-box strong{
-        font-size: 3rem;
-        
+    .about-redirect {
+        display: none;
     }
 
-    .first *{
-        font-size: 1.7rem;
-    }
 
-    .first{
+
+    .first {
         align-items: center;
         justify-content: center;
-        
+
     }
 
 
@@ -253,28 +251,27 @@
 
 }
 
-@media (max-width: 460px){
+@media (max-width: 460px) {
 
-    .contact{
+    .sections {
+        gap: 2rem;
+    }
+
+    .contact {
         flex-direction: column;
     }
 
-    .icon-box{
+    .icon-box {
         display: none;
     }
-    
-    .first{
+
+    .first {
         gap: 0px;
     }
 
-    .text-box{
-        padding: 5px 15px;
+    .text-box {
+        padding: 0.5rem 1.5rem;
     }
 
-    .project-title{
-        font-size: 2.6rem;
-    }
+
 }
-
-
-
