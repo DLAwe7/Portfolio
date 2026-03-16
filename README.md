@@ -16,7 +16,7 @@ The goal of this site is to present my work in a cleaner way while also reflecti
 
 ## Live Demo
 
-[View Portfolio](YOUR_DEPLOYED_URL_HERE)
+[View Portfolio](https://personal-portoflio.netlify.app/home)
 
 ## Features
 
