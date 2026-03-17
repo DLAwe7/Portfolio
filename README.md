@@ -58,7 +58,7 @@ The goal of this site is to present my work in a cleaner way while also reflecti
 ## Featured Projects
 
 ### FlexFinance
-My first project. A front-end banking dashboard built with vanilla JavaScript, focused on modular architecture, reusable layout injection, dynamic rendering, and polished UI behavior.
+A front-end banking dashboard built with vanilla JavaScript, focused on modular architecture, reusable layout injection, dynamic rendering, and polished UI behavior.
 
 ### YouTube Frontend Clone
 A React YouTube recreation that emphasizes reusable components, responsive design, protected API usage, accessibility focused interactions, and structured project architecture.
