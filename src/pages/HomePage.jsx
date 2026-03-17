@@ -6,8 +6,6 @@ import avatar from "../assets/avatar.png"
 import ProjectCard from "../components/ProjectCard";
 import { projectsList } from "../data/projectsList";
 import { Link } from "react-router-dom";
-import CV from "../assets/CVNP.pdf"
-
 
 
 
@@ -58,7 +56,7 @@ function HomePage() {
 
                     <div className="contact">
 
-                        <a href={CV} className="download-button" download
+                        <a href="/CVNP.pdf" className="download-button" download="Kevin-Sanchez-CV.pdf"
                             aria-label="Download my Curriculum Vitae">
 
                             <span>Download CV</span>

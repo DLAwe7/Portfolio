@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
 import "./NavBarMobile.css"
 import useNavBarController from "../hooks/useNavBarController";
-import CV from "../assets/CVNP.pdf"
 import { useEscKeyDown } from "../hooks/useEscKeyDown";
 import { useInert } from "../hooks/useInert";
 import { useRef } from "react";
@@ -73,7 +72,7 @@ function NavBarMobile({ isOpen, setIsOpen }) {
 
                         <li>
 
-                            <a href={CV} className="header-anchor github-header" download>
+                            <a href="/CVNP.pdf" className="header-anchor github-header" download>
 
                                 <span>Download CV</span>
 
@@ -88,7 +87,7 @@ function NavBarMobile({ isOpen, setIsOpen }) {
 
                     <div className="bottom-icons">
 
-                        <a href={CV} download aria-label="Download my Curriculum Vitae">
+                        <a href="/CVNP.pdf" download="Kevin-Sanchez-CV.pdf" aria-label="Download my Curriculum Vitae">
                             <FontAwesomeIcon icon={faDownload} aria-hidden="true" />
                         </a>
 
