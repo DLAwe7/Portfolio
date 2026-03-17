@@ -15,6 +15,8 @@ function HomePage() {
 
     const projects = projectsList;
 
+    const CV = "/assets/CVNP.pdf";
+
     return (
 
 
@@ -56,7 +58,7 @@ function HomePage() {
 
                     <div className="contact">
 
-                        <a href="/CVNP.pdf" className="download-button" download="Kevin-Sanchez-CV.pdf"
+                        <a href={CV} className="download-button" download="Kevin-Sanchez-CV.pdf"
                             aria-label="Download my Curriculum Vitae">
 
                             <span>Download CV</span>

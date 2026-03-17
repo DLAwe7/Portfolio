@@ -21,6 +21,7 @@ function NavBarMobile({ isOpen, setIsOpen }) {
 
     const headerList = useNavBarController();
 
+    const CV = "/assets/CVNP.pdf"
 
 
     const asideRef = useRef(null)
@@ -72,7 +73,7 @@ function NavBarMobile({ isOpen, setIsOpen }) {
 
                         <li>
 
-                            <a href="/CVNP.pdf" className="header-anchor github-header" download>
+                            <a href={CV} className="header-anchor github-header" download>
 
                                 <span>Download CV</span>
 
@@ -87,7 +88,7 @@ function NavBarMobile({ isOpen, setIsOpen }) {
 
                     <div className="bottom-icons">
 
-                        <a href="/CVNP.pdf" download="Kevin-Sanchez-CV.pdf" aria-label="Download my Curriculum Vitae">
+                        <a href={CV} download="Kevin-Sanchez-CV.pdf" aria-label="Download my Curriculum Vitae">
                             <FontAwesomeIcon icon={faDownload} aria-hidden="true" />
                         </a>
 
