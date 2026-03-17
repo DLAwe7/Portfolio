@@ -6,7 +6,7 @@ import avatar from "../assets/avatar.png"
 import ProjectCard from "../components/ProjectCard";
 import { projectsList } from "../data/projectsList";
 import { Link } from "react-router-dom";
-import CV from "../assets/CVENPN.pdf"
+import CV from "../assets/CVNP.pdf"
 
 
 

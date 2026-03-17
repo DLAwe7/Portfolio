@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
 import "./NavBarMobile.css"
 import useNavBarController from "../hooks/useNavBarController";
-import CV from "../assets/CVENPN.pdf"
+import CV from "../assets/CVNP.pdf"
 import { useEscKeyDown } from "../hooks/useEscKeyDown";
 import { useInert } from "../hooks/useInert";
 import { useRef } from "react";
