@@ -1,5 +1,6 @@
 import FlexPreview from "../assets/vanilla-preview.png"
 import YoutubeClonePreview from "../assets/youtube-clone-preview.png"
+import LaundryApp from "../assets/laundry-app-preview.png"
 
 export const projectsList = [
     {
@@ -183,6 +184,193 @@ export const projectsList = [
                             "Focus handling, keyboard support, and controlled overlays noticeably improved the overall polish and usability of the interface."
                     }
                 ]
+            }
+        ]
+    },
+    {
+        id: "laundry-app",
+        name: "Laundry Scheduler",
+        alt: "Laundry Scheduler Preview",
+        previewImage: LaundryApp,
+        github: "https://github.com/DLAwe7/Laundry-Scheduler",
+        shortDescription: {
+            title: "Laundry Scheduler App",
+            content: {
+                resume: (
+                    <>
+                        A <strong>Full-Stack</strong> laundry app built with
+                        <strong className="blue"> React</strong>,
+                        <strong className="yellow"> Typescript</strong>, and
+                        <strong className="green"> Supabase</strong>.
+                    </>
+                ),
+                introduction:
+                    "This project was created for a real residential community to reduce laundry room reservation conflicts and provide a simple way to organize shared time slots."
+            }
+        },
+        tools: {
+            introduction: "Built with a modern front-end stack:",
+            toolsUsed: [
+                { name: "React", color: "blue", icon: "faReact" },
+                { name: "TypeScript", color: "orange", icon: "faTypescript" },
+            ]
+        },
+        sections: [
+            {
+                id: "overview",
+                title: "Overview",
+                introduction:
+                    "The app was built around a real world scheduling problem. It gives residents a clear way to reserve laundry time slots while keeping the system lightweight, private, and easy to maintain.",
+                color: "green",
+                content: [
+                    {
+                        title: "Real Community Use Case",
+                        id: "real-community-use",
+                        description:
+                            "The project was designed for actual residents, not as a mock application, so the user flow focuses on practical scheduling needs and simple daily usage.",
+                        icon: "faPeopleRoof",
+                        className: "project-item-title-green",
+                    },
+                    {
+                        title: "Time-Slot Reservation System",
+                        id: "time-slot-system",
+                        description:
+                            "Residents can choose available laundry time slots, confirm reservations, inspect their upcoming reservations, and cancel them when needed.",
+                        icon: "faCalendarCheck",
+                        className: "project-item-title-green",
+                    },
+                    {
+                        title: "Supabase-Backed Data Sync",
+                        id: "supabase-sync",
+                        description:
+                            "Reservation data is stored in Supabase and synchronized through TanStack Query so the UI can stay aligned with the database after creating or deleting reservations.",
+                        icon: "faDatabase",
+                        className: "project-item-title-green",
+                    }
+                ]
+            },
+            {
+                id: "features",
+                title: "Key Features",
+                introduction:
+                    "The project focuses on practical product behavior: preventing conflicts, protecting admin actions, reducing unnecessary user data, and keeping the interface simple for residents.",
+                color: "blue",
+                content: [
+                    {
+                        title: "Protected User Routes",
+                        id: "protected-routes",
+                        description:
+                            "Authenticated users are routed into the application while unauthenticated users are kept outside protected reservation and admin views.",
+                        icon: "faLock",
+                        className: "project-item-title-blue",
+                    },
+                    {
+                        title: "Role-Based Admin Panel",
+                        id: "role-based-admin",
+                        description:
+                            "Admin users have access to a protected panel where they can inspect reservations, view resident accounts, and delete users when necessary.",
+                        icon: "faUserShield",
+                        className: "project-item-title-blue",
+                    },
+                    {
+                        title: "Conflict Prevention",
+                        id: "conflict-prevention",
+                        description:
+                            "Already-booked slots are blocked in the interface, while backend database rules remain responsible for enforcing the final reservation constraints.",
+                        icon: "faBan",
+                        className: "project-item-title-blue",
+                    },
+                    {
+                        title: "Active Reservation Limit",
+                        id: "reservation-limit",
+                        description:
+                            "To reduce abuse and keep scheduling fair, each user is limited to a maximum of 2 active reservations at a time.",
+                        icon: "faScaleBalanced",
+                        className: "project-item-title-blue",
+                    },
+                    {
+                        title: "Private Door-Number Login Flow",
+                        id: "door-number-login",
+                        description:
+                            "Instead of requiring sensitive personal information, the app uses each resident's unique door number to support identification while keeping user details private from other residents.",
+                        icon: "faDoorClosed",
+                        className: "project-item-title-blue",
+                    },
+                    {
+                        title: "Responsive Mobile-Friendly UI",
+                        id: "responsive-ui",
+                        description:
+                            "The interface includes mobile-friendly navigation, modals, overlays, toast messages, and light/dark theme support for a smoother everyday experience.",
+                        icon: "faMobileScreen",
+                        className: "project-item-title-blue",
+                    },
+                ],
+            },
+            {
+                id: "architecture",
+                title: "Architecture Choices",
+                introduction:
+                    "The app was structured to stay small and cost-free while still behaving like a real product, with clear separation between frontend interactions, database state, and protected admin operations.",
+                color: "green",
+                content: [
+                    {
+                        title: "Frontend + Supabase Backend",
+                        id: "frontend-supabase",
+                        description:
+                            "The React frontend communicates with Supabase for authentication, reservation data, database rules, RPC functions, and admin-only operations.",
+                    },
+                    {
+                        title: "React Query for Refreshing State",
+                        id: "react-query-state",
+                        description:
+                            "TanStack Query handles server state, cache invalidation, and UI refreshes after creating or deleting reservations, avoiding unnecessary page reloads.",
+                    },
+                    {
+                        title: "Protected Admin Deletion Flow",
+                        id: "admin-deletion-flow",
+                        description:
+                            "Resident deletion is handled through an admin-only Supabase Edge Function, keeping sensitive actions out of normal client-side access.",
+                    },
+                    {
+                        title: "Cost-Free Deployment Approach",
+                        id: "cost-free-deployment",
+                        description:
+                            "The app uses Netlify for hosting, Supabase free-tier services for backend functionality, and GitHub Actions for scheduled cleanup of old reservations.",
+                    },
+                ],
+            },
+            {
+                id: "takeaways",
+                title: "What I Learned",
+                introduction:
+                    "This project was especially valuable because it pushed me beyond frontend-only development and helped me understand how frontend and backend decisions depend on each other in a real application.",
+                color: "blue",
+                content: [
+                    {
+                        title: "Understanding How Backend Logic Supports the Frontend",
+                        id: "backend-logic",
+                        description:
+                            "Working with Supabase helped me better understand how authentication, database tables, permissions, server functions, and frontend state all connect to create a complete product.",
+                    },
+                    {
+                        title: "Frontend and Backend Go Hand in Hand",
+                        id: "frontend-backend",
+                        description:
+                            "Building the app made it clear that frontend interactions are only reliable when the backend rules, data structure, and security decisions support them properly.",
+                    },
+                    {
+                        title: "Building a Full-Stack App Alone",
+                        id: "full-stack-alone",
+                        description:
+                            "Handling the project from the interface to the database gave me a stronger sense of ownership and helped me see how many small decisions are involved in making an app actually work.",
+                    },
+                    {
+                        title: "Solving a Real Problem Was Rewarding",
+                        id: "real-problem",
+                        description:
+                            "Because this app was made for real people and a real scheduling issue, finishing it felt more meaningful than building a purely fictional demo.",
+                    },
+                ],
             }
         ]
     },

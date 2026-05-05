@@ -3,9 +3,11 @@ import {
     faCodeBranch, faDatabase, faServer, faVideo, faDisplay,
     faUniversalAccess, faPalette, faChartLine, faCubes, faBookAtlas, faLaptopCode,
     faChartColumn, faLayerGroup, faBuildingColumns, faChevronRight, faClipboard,
-    faGear, faHouse, faPowerOff, faWallet, faCommentDots, faComments
+    faGear, faHouse, faPowerOff, faWallet, faCommentDots, faComments,
+    faPeopleRoof,
+    faCalendarCheck
 } from "@fortawesome/free-solid-svg-icons";
-import { faBitcoin, faCss3Alt, faGithub, faHtml5, faJs, faReact, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faBitcoin, faCss3Alt, faGithub, faHtml5, faJs, faReact, faTypescript, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 
 export const iconMap = {
@@ -38,6 +40,10 @@ export const iconMap = {
     faGithub,
     faPowerOff,
     faChevronRight,
+    faTypescript,
+    faPeopleRoof,
+    faCalendarCheck,
+
 
 
 }

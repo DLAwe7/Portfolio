@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./HomePage.css"
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faArrowRight, faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import avatar from "../assets/avatar.png"
 import ProjectCard from "../components/ProjectCard";
 import { projectsList } from "../data/projectsList";
@@ -14,8 +14,6 @@ import { Link } from "react-router-dom";
 function HomePage() {
 
     const projects = projectsList;
-
-    const CV = "/assets/CVNP.pdf";
 
     return (
 
@@ -57,14 +55,6 @@ function HomePage() {
                     </div>
 
                     <div className="contact">
-
-                        <a href={CV} className="download-button" download="Kevin-Sanchez-CV.pdf"
-                            aria-label="Download my Curriculum Vitae">
-
-                            <span>Download CV</span>
-                            <FontAwesomeIcon icon={faDownload} aria-hidden="true" />
-
-                        </a>
 
                         <Link to="/contact" className="about-redirect" aria-label="Go to About/Contact page">
 

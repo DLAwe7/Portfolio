@@ -1,5 +1,5 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faDownload, faX } from "@fortawesome/free-solid-svg-icons";
+import { faX } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
 import "./NavBarMobile.css"
@@ -20,8 +20,6 @@ import { FocusScope } from "@radix-ui/react-focus-scope";
 function NavBarMobile({ isOpen, setIsOpen }) {
 
     const headerList = useNavBarController();
-
-    const CV = "/assets/CVNP.pdf"
 
 
     const asideRef = useRef(null)
@@ -71,15 +69,6 @@ function NavBarMobile({ isOpen, setIsOpen }) {
 
                         </li>
 
-                        <li>
-
-                            <a href={CV} className="header-anchor github-header" download>
-
-                                <span>Download CV</span>
-
-                            </a>
-
-                        </li>
 
 
 
@@ -87,10 +76,6 @@ function NavBarMobile({ isOpen, setIsOpen }) {
 
 
                     <div className="bottom-icons">
-
-                        <a href={CV} download="Kevin-Sanchez-CV.pdf" aria-label="Download my Curriculum Vitae">
-                            <FontAwesomeIcon icon={faDownload} aria-hidden="true" />
-                        </a>
 
                         <a href="https://github.com/DLAwe7" rel="noopener noreferrer" target="_blank" aria-label="GitHub Profile">
                             <FontAwesomeIcon icon={faGithub} aria-hidden="true" />

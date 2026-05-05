@@ -37,7 +37,7 @@ function ProjectDetailsPage() {
 
                 </div>
 
-                <section className="project-video-wrapper">
+                {project.embeddedVideo && <section className="project-video-wrapper">
 
                     <iframe src={project.embeddedVideo} title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -45,7 +45,7 @@ function ProjectDetailsPage() {
 
                     </iframe>
 
-                </section>
+                </section>}
 
                 <section className="project-tools">
 
@@ -100,7 +100,7 @@ function ProjectDetailsPage() {
 
 
 
-                        <a className="github-redirect" href={project.liveDemo} target="_blank" rel="noopener noreferrer">
+                        {project.liveDemo && <a className="github-redirect" href={project.liveDemo} target="_blank" rel="noopener noreferrer">
 
 
 
@@ -114,9 +114,9 @@ function ProjectDetailsPage() {
                             </div>
 
                         </a>
+                        }
 
-
-                        <a className="github-redirect" href={project.video} target="_blank" rel="noopener noreferrer">
+                        {project.video && <a className="github-redirect" href={project.video} target="_blank" rel="noopener noreferrer">
 
 
                             <div className="redirect-project-wrapper green">
@@ -127,7 +127,7 @@ function ProjectDetailsPage() {
 
                             </div>
 
-                        </a>
+                        </a>}
 
                         <nav className="project-toc" aria-label="Sections Navigation">
 

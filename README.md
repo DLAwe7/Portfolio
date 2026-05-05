@@ -4,13 +4,18 @@ A responsive portfolio built with **React** and **Vite** to showcase my front-en
 
 This portfolio highlights two larger personal projects built independently:
 
-- **FlexFinance:** A modular multi-page banking dashboard built with vanilla JavaScript
+- **Laundry Scheduler:** A Full-Stack laundry room reservation app built with React, TypeScript, Supabase, TanStack Query, and Netlify.
 
-  - **Links:** [Live Demo](https://dlawe7.github.io/FlexFinance/) · [GitHub](https://github.com/DLAwe7/FlexFinance) · [Video Walkthrough](https://www.youtube.com/watch?v=VM2-aURb0C0)
+ - **Links:** [GitHub](https://github.com/DLAwe7/Laundry-Scheduler)
+
 
 - **YouTube Frontend Clone:** A React-based YouTube recreation focused on reusable components, routing, accessibility, and UI behavior
 
   -   **Links:** [Live Demo](https://youtube-frontendclone.netlify.app/home) · [GitHub](https://github.com/DLAwe7/Youtube-Frontend-Clone) · [Video Walkthrough](https://www.youtube.com/watch?v=zsUIJyR5Ejk)
+
+- **FlexFinance:** A modular multi-page banking dashboard built with vanilla JavaScript
+
+  - **Links:** [Live Demo](https://dlawe7.github.io/FlexFinance/) · [GitHub](https://github.com/DLAwe7/FlexFinance) · [Video Walkthrough](https://www.youtube.com/watch?v=VM2-aURb0C0)
 
 The goal of this site is to present my work in a cleaner way while also reflecting how I approach layout, interaction, and maintainable front-end architecture.
 
@@ -23,7 +28,6 @@ The goal of this site is to present my work in a cleaner way while also reflecti
 - Responsive layout for desktop and mobile
 - Dedicated project detail pages
 - Embedded project videos and live demo links
-- Downloadable CV
 - Contact page with direct email/GitHub access
 - Mobile navigation with:
   - focus trapping
@@ -41,6 +45,7 @@ The goal of this site is to present my work in a cleaner way while also reflecti
 - **HTML**
 - **CSS**
 - **JavaScript**
+- **TypeScript**
 - **React**
 - **Vite**
 
@@ -57,11 +62,14 @@ The goal of this site is to present my work in a cleaner way while also reflecti
 
 ## Featured Projects
 
-### FlexFinance
-A front-end banking dashboard built with vanilla JavaScript, focused on modular architecture, reusable layout injection, dynamic rendering, and polished UI behavior.
+### Laundry Scheduler
+A Full-Stack laundry room reservation app built with React, TypeScript, Supabase, TanStack Query, and Netlify, created for a real residential community to improve scheduling organization and reduce reservation conflicts.
 
 ### YouTube Frontend Clone
 A React YouTube recreation that emphasizes reusable components, responsive design, protected API usage, accessibility focused interactions, and structured project architecture.
+
+### FlexFinance
+A front-end banking dashboard built with vanilla JavaScript, focused on modular architecture, reusable layout injection, dynamic rendering, and polished UI behavior.
 
 ## Accessibility and Interaction Work
 
